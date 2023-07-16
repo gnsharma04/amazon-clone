@@ -1,0 +1,219 @@
+/*https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-2x-reorg-celnav._CB590297325_.png*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Ubuntu;
+}
+
+.header {
+  height: 60px;
+  background-color: rgb(19, 25, 33);
+}
+
+.container {
+  height: 100%;
+  width: 99%;
+  margin: auto;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  height: 50px;
+  width: 125px;
+  margin-left: 15px;
+}
+
+.logo {
+  width: 120px;
+  height: 60px;
+  background: url("assets/home-logo2.png");
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+}
+
+.border-white {
+  border: 1.5px solid transparent;
+}
+
+.border-white:hover {
+  border: 1.5px solid white;
+}
+
+/*Address section*/
+.address-container {
+  color: white;
+  margin-left: 20px;
+  padding: 5px;
+  width: 200px;
+}
+
+.address-container p {
+  margin: 0;
+}
+
+.icon-address {
+  display: flex;
+  align-items: center;
+}
+
+.hello {
+  font-size: 0.8rem;
+  padding-left: 20px;
+  color: #ccc;
+}
+
+.icon-location {
+  margin-right: 7px;
+  padding-bottom: 2px;
+}
+
+.address-select {
+  font-size: 0.9rem;
+}
+
+/*Search Section*/
+.search-container {
+  margin-left: 10px;
+  color: white;
+  width: 900px;
+  display: flex;
+  height: 43px;
+  justify-content: space-between;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.search-container:hover {
+  outline: 3px solid rgb(25, 148, 248);
+}
+
+.search-select {
+  width: 60px;
+  text-align: center;
+  border: none;
+  background-color: #ccc;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  text-indent: 5px;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 3px;
+}
+
+.search-icon {
+  width: 50px;
+  background-color: rgb(145, 246, 254);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.search-icon:hover {
+  background-color: rgb(25, 148, 248);
+}
+
+/*Language Container*/
+.language-container {
+  height: 40px;
+  margin-left: 15px;
+  display: flex;
+  padding-left: 5px;
+}
+
+.language-container p {
+  font-size: 1rem;
+  color: white;
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 15px;
+}
+
+.language-image {
+  width: 25px;
+  margin-top: 11px;
+}
+
+.language-image img {
+  width: 80%;
+}
+
+/*Login Container*/
+.login-container {
+  color: white;
+  margin-left: 5px;
+  padding: 5px;
+  width: 140px;
+}
+
+.login-container p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.account {
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+/*return & order container*/
+.return-order-container {
+  color: white;
+  margin-left: 5px;
+  width: 90px;
+  padding: 5px;
+}
+
+.return-order-container p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.orders {
+  font-weight: 900;
+  font-size: 0.9rem;
+  display: flex;
+  width: 70px;
+}
+
+/*cart section*/
+.cart-container {
+  color: white;
+  margin-left: 10px;
+  width: 100px;
+  padding-left: 1px;
+  padding-right: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-image {
+  background: url(assets/main-img.png);
+  width: 50px;
+  height: 50px;
+  background-size: auto;
+  background-size: 25rem;
+  background-position-x: -10px;
+  background-position-y: 135px;
+  overflow: hidden;
+}
+
+/*Sub Header section*/
+
+.sub-header {
+  height: 40px;
+  background-color: rgb(35, 47, 62);
+}
