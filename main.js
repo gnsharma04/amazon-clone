@@ -23,3 +23,20 @@ slideBtnRight.addEventListener("click", () => {
     element.style.transform = `translateX(${startSlider}%)`;
   });
 });
+
+/* Sidebar Navigation  */
+
+const sidebarNavigationEl = document.getElementById(
+  "sidebar-container-navigation"
+);
+const sidebarOpenNavigationEl = document.getElementById("open-nav-sidebar");
+const sidebarCloseNavigationEl = document.getElementById(
+  "sidebar-navigation-close"
+);
+sidebarOpenNavigationEl.addEventListener("click", () => {
+  sidebarNavigationEl.classList.toggle("sidebar-show");
+});
+
+sidebarCloseNavigationEl.addEventListener("click", () => {
+  sidebarNavigationEl.classList.toggle("sidebar-show");
+});

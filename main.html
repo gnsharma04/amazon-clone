@@ -78,41 +78,100 @@
     </header>
 
     <!--Sub Header-->
-    <header class="sub-header">
-      <div class="shcontainer">
-        <div class="all-container shborder-white">
-          <i class="fa-solid fa-bars"></i>
-          <p>All</p>
-        </div>
+    <nav class="nav">
+      <div class="container container-nav">
+        <ul>
+          <li class="border-white" id="open-nav-sidebar">
+            <span class="open-nav-slider">
+              <i class="fa-solid fa-bars"></i>
+              All
+            </span>
+          </li>
 
-        <div class="fresh shborder-white">Fresh</div>
-
-        <div class="today shborder-white">Today's Deals</div>
-
-        <div class="electronics shborder-white">Electronics</div>
-
-        <div class="buyagain shborder-white">Buy Again</div>
-
-        <div class="minitv shborder-white">Amazon miniTV</div>
-
-        <div class="sell shborder-white">Sell</div>
-
-        <div class="gcards shborder-white">Gift Cards</div>
-
-        <div class="coupons shborder-white">Coupons</div>
-
-        <div class="psupplies shborder-white">Pet Supplies</div>
-
-        <div class="business shborder-white">
-          Amazon Business
-          <i class="fa-solid fa-caret-down"></i>
-        </div>
-
-        <div class="fashion shborder-white">Fashion</div>
-
-        <div class="sports shborder-white">Sports, Fitness & Outdoors</div>
+          <li class="border-white"><a href="#">Fresh</a></li>
+          <li class="border-white"><a href="#">Today's Deals</a></li>
+          <li class="border-white"><a href="#">Electronics</a></li>
+          <li class="border-white"><a href="#">Buy Again</a></li>
+          <li class="border-white"><a href="#">Amazon miniTV</a></li>
+          <li class="border-white"><a href="#">Sell</a></li>
+          <li class="border-white"><a href="#">Gift Cards</a></li>
+          <li class="border-white"><a href="#">Gift Ideas</a></li>
+          <li class="border-white"><a href="#">Coupons</a></li>
+          <li class="border-white"><a href="#">Pet Supplies</a></li>
+          <li class="border-white business-hover">
+            <a href="#">
+              Amazon Business
+              <i class="fa-solid fa-caret-down"></i>
+              <div class="business-image-container">
+                <img
+                  src="https://m.media-amazon.com/images/G/31/AmazonBusiness/AcqusitionFlyout/Phase1/abAcquisitionPersonalized-en-IN._CB405356976_.png"
+                  class="business-image"
+                />
+              </div>
+            </a>
+          </li>
+          <li class="border-white"><a href="#">Fashion</a></li>
+        </ul>
       </div>
-    </header>
+    </nav>
+
+    <!--Sidebar navigation-->
+    <div class="sidebar-container-navigation" id="sidebar-container-navigation">
+      <div class="sidebar-left-part">
+        <div class="sidebar-top">
+          <i class="fa-solid fa-circle-user"></i>
+          <h2>Hello, <span>sign In</span></h2>
+        </div>
+
+        <div class="sidebar-container">
+          <div class="sidebar-item">
+            <h2>Trending</h2>
+            <p>Best Sellers</p>
+            <p>New Releases</p>
+            <p>Movers and Shakers</p>
+          </div>
+
+          <div class="sidebar-item">
+            <h2>Digital Content And Devices</h2>
+            <p>Amazon miniTV- FREE entertainment</p>
+            <p>Echo and Alexa</p>
+            <p>Fire TV</p>
+            <p>Kindle E-Readers & eBooks</p>
+            <p>Audible Audiobooks</p>
+            <p>Amazon Prime Video</p>
+            <p>Amazon Prime Music</p>
+          </div>
+
+          <div class="sidebar-item">
+            <h2>Shop By Category</h2>
+            <p>Mobiles, Computers</p>
+            <p>TV, Appliances, Electronics</p>
+            <p>Men's Fashion</p>
+            <p>Women's Fashion</p>
+            <p>See All</p>
+          </div>
+
+          <div class="sidebar-item">
+            <h2>Programs & Features</h2>
+            <p>Gift Cards & Mobile Recharges</p>
+            <p>Amazon Launchpad</p>
+            <p>Flight Tickets</p>
+            <p>Clearance store</p>
+          </div>
+
+          <div class="sidebar-item">
+            <h2>Help & Settings</h2>
+            <p>Your Account</p>
+            <p>Customer Service</p>
+            <p>Sign in</p>
+          </div>
+        </div>
+      </div>
+
+      <button id="sidebar-navigation-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
 
     <!--Image Slider Section-->
     <section>

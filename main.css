@@ -225,72 +225,66 @@ body {
 
 /*Header Section End */
 
-/*Sub Header section*/
-
-.sub-header {
+/*Navigation */
+.nav {
   height: 40px;
   background-color: rgb(35, 47, 62);
-  color: white;
-  padding: 5px;
-  display: flex;
-  width: 100%;
+  margin: 0;
+  padding: 0.1px;
 }
 
-.shborder-white {
-  border: 1px solid transparent;
+.container-nav {
+  align-items: center;
+  padding-left: 10px;
 }
 
-.shborder-white:hover {
-  border: 1px solid white;
-  border-radius: 2px;
-}
-
-.shcontainer {
+.container-nav ul {
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
-}
-
-/* All Container */
-.all-container {
-  display: flex;
-  width: 50px;
-  height: 30px;
-  margin-left: 10px;
-}
-
-.all-container i {
-  margin-left: 5px;
-  margin-top: 7px;
-}
-
-.all-container p {
-  margin-top: 7px;
-  margin-left: 6px;
+  height: 100%;
   font-size: 0.9rem;
-  font-weight: 900;
+  color: white;
+  list-style: none;
 }
 
-/* sub-header all containers */
-.fresh,
-.today,
-.electronics,
-.buyagain,
-.minitv,
-.sell,
-.gcards,
-.coupons,
-.psupplies,
-.business,
-.fashion,
-.sports {
-  margin-left: 10px;
+.container-nav ul li {
   padding: 5px;
-  font-size: 0.9rem;
 }
 
-.business i {
-  font-size: 0.8rem;
-  color: #ccc;
+.container-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 5px;
+}
+
+/*Business Image popup*/
+.business-hover {
+  display: hover;
+}
+
+.business-image-container {
+  background-color: white;
+  height: 150px;
+  width: 500px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  color: black;
+  margin-left: -6px;
+  margin-top: 11px;
+  border-radius: 5px;
+}
+
+.business-hover:hover .business-image-container {
+  display: block;
+}
+
+.business-image-container .business-image {
+  padding: 10px;
+  width: 100%;
+  height: 150px;
 }
 
 /*Image Slider*/
@@ -300,11 +294,12 @@ body {
 
 .image-list {
   display: flex;
+  overflow: hidden;
 }
 
 .image-item {
   min-width: 100%;
-  transition: transform 0.3s;
+  transition: transform 0.4s;
 }
 
 .image-item img {
@@ -334,4 +329,86 @@ body {
   border-color: lightskyblue;
   box-shadow: 2px 2px 2px solid white;
   margin: 2px;
+}
+
+/* Sidebar Navigation */
+#open-nav-sidebar {
+  cursor: pointer;
+}
+
+.sidebar-container {
+  padding-bottom: 80px;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar-container-navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: transparent;
+  transform: translate(-100%);
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.sidebar-show {
+  transform: translateX(0%);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar-left-part {
+  background-color: white;
+  width: 365px;
+  height: 100%;
+  box-sizing: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 30px;
+  background-color: rgb(35, 47, 62);
+  color: white;
+  height: 50px;
+}
+
+.sidebar-top h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.sidebar-top i {
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.sidebar-item {
+  padding-left: 30px;
+  border-top: 1.5px solid #ccc;
+}
+
+.sidebar-item h2 {
+  font-size: 18px;
+  color: rgb(17, 17, 17);
+}
+
+.sidebar-item p {
+  color: rgb(56, 56, 56);
+  font-size: 14px;
+  padding: 7px;
+}
+
+#sidebar-navigation-close {
+  background-color: transparent;
+  align-self: flex-start;
+  font-size: 30px;
+  border: none;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
 }
