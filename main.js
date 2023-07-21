@@ -24,6 +24,8 @@ slideBtnRight.addEventListener("click", () => {
   });
 });
 
+//render automatic
+
 /* Sidebar Navigation  */
 
 const sidebarNavigationEl = document.getElementById(
