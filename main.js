@@ -86,3 +86,31 @@ for (let i = 0; i < todayDealsLength; i++) {
 
 todayDealsProductListEl.innerHTML = todayDealsProductHTML;
 // console.log(todayDealProductHTML);
+
+let today_deals_btn_prevEl = document.getElementById("today_deals_btn_prev");
+let today_deals_btn_nextEl = document.getElementById("today_deals_btn_next");
+let today_deals_product_itemEl = document.querySelectorAll(
+  ".today_deals_product_item"
+);
+
+let startProduct = 0;
+
+today_deals_btn_prevEl.addEventListener("click", () => {
+  if (startProduct < 0) {
+    startProduct += 500;
+  }
+  if (startProduct > -2000) {
+    today_deals_product_itemEl.forEach((el) => {
+      el.style.transform = `translateX(${startProduct}%)`;
+    });
+  }
+});
+
+today_deals_btn_nextEl.addEventListener("click", () => {
+  if (startProduct > -1500) {
+    startProduct -= 500;
+  }
+  today_deals_product_itemEl.forEach((el) => {
+    el.style.transform = `translateX(${startProduct}%)`;
+  });
+});
