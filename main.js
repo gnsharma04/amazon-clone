@@ -6,25 +6,38 @@ console.log(imgItem.length - 1);
 
 let startSlider = 0;
 let endSlider = (imgItem.length - 1) * 100;
-slideBtnLeft.addEventListener("click", () => {
+
+function handleLeftBtn() {
   if (startSlider < 0) {
     startSlider = startSlider + 100;
   }
   imgItem.forEach((element) => {
     element.style.transform = `translateX(${startSlider}%)`;
   });
-});
+}
 
-slideBtnRight.addEventListener("click", () => {
-  if (startSlider > -endSlider) {
-    startSlider = startSlider - 100;
+function handleRightBtn() {
+  {
+    if (startSlider > -endSlider) {
+      startSlider = startSlider - 100;
+    }
+    imgItem.forEach((element) => {
+      element.style.transform = `translateX(${startSlider}%)`;
+    });
   }
-  imgItem.forEach((element) => {
-    element.style.transform = `translateX(${startSlider}%)`;
-  });
-});
+}
+
+slideBtnLeft.addEventListener("click", handleLeftBtn);
+slideBtnRight.addEventListener("click", handleRightBtn);
 
 //render automatic
+function renderSlideAuto() {
+  if (startSlider > -endSlider) handleRightBtn();
+  else {
+    startSlider = 0;
+  }
+}
+setInterval(renderSlideAuto, 7000);
 
 /* Sidebar Navigation  */
 
