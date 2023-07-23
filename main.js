@@ -1,3 +1,5 @@
+import { todayDeals } from "./todaydeals.js";
+
 let slideBtnLeft = document.getElementById("slide-btn-left");
 let slideBtnRight = document.getElementById("slide-btn-right");
 let imgItem = document.querySelectorAll(".image-item");
@@ -55,3 +57,32 @@ sidebarOpenNavigationEl.addEventListener("click", () => {
 sidebarCloseNavigationEl.addEventListener("click", () => {
   sidebarNavigationEl.classList.toggle("sidebar-show");
 });
+
+/*Today Deals*/
+let todayDealsProductListEl = document.querySelector(
+  ".today_deals_product_list"
+);
+// console.log(todayDealProductListEl);
+
+let todayDealsProductHTML = "";
+let todayDealsLength = todayDeals.length;
+
+for (let i = 0; i < todayDealsLength; i++) {
+  // console.log(todayDeals[i]);
+
+  todayDealsProductHTML += `
+    <div class="today_deals_product_item">
+      <img
+        src=${todayDeals[i].img}
+      />
+      <div class="discount_container">
+        <a href="#">Up to ${todayDeals[i].discount}% off</a>
+        <a href="#">${todayDeals[i].DealOfDay}</a>
+      </div>
+      <p>${todayDeals[i].desc}</p>
+    </div>
+  `;
+}
+
+todayDealsProductListEl.innerHTML = todayDealsProductHTML;
+// console.log(todayDealProductHTML);
