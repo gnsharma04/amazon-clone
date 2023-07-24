@@ -444,7 +444,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
-  max-width: 390px;
+  max-width: 360px;
   box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -498,7 +498,7 @@ body {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 390px;
+  max-width: 360px;
   cursor: pointer;
 }
 
@@ -527,7 +527,7 @@ body {
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 10px;
-  height: 360px;
+  height: 350px;
   box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1), 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -566,7 +566,7 @@ body {
   font-size: 14px;
   padding: 5px 10px;
   min-width: 250px;
-  height: 250px;
+  height: 280px;
   margin-right: 10px;
   flex-direction: column;
   transform: translateX(0%);
@@ -617,4 +617,137 @@ body {
   border: none;
   border-radius: 2px;
   box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1), 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+.back {
+  background-color: rgb(55, 71, 90);
+  height: 60px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.back a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back:hover {
+  background-color: rgb(72, 87, 105);
+}
+
+.footer-container {
+  height: 350px;
+  width: 100%;
+  background-color: rgb(35, 47, 62);
+  color: white;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+
+.footer-list {
+  line-height: 25px;
+  margin-top: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0px 40px;
+}
+
+.footer-title {
+  list-style: none;
+  font-size: 14px;
+}
+
+.footer-title h2 {
+  font-size: 14px;
+}
+
+.footer-title li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-title li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-title li a:hover {
+  text-decoration: underline;
+}
+
+/*Country section*/
+.country-container {
+  height: 160px;
+  background-color: rgb(35, 47, 62);
+  border-top: 1px solid gray;
+}
+
+.country-header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+}
+
+.footer-logo {
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.lang-btn {
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  background-color: transparent;
+  color: white;
+  align-self: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.country-footer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.country-list {
+  color: white;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  font-size: 13px;
+  margin: 7px;
+  cursor: pointer;
+}
+
+.country-list li:hover {
+  text-decoration: underline;
+}
+
+.last {
+  background-color: black;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 12px;
+  gap: 1rem;
+  padding: 10px;
+  color: white;
+}
+
+.end-links {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.end-links:hover {
+  text-decoration: underline;
 }
